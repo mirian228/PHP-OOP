@@ -1,6 +1,6 @@
 <?php
 include("includes/person.inc.php");
-
+include("includes/newclass.inc.php")
 ?>
 
 <!DOCTYPE html>
@@ -15,9 +15,9 @@ include("includes/person.inc.php");
 
 
     <?php
-        $person = new Person("Miriani", "Brown", 22);
-        $person -> setName("Mirian");
-        echo "{$person->getName()}";
+       $object = new NewClass();
+       unset($object);
+       echo $object->getProperty();
     ?>
     
 </body>
