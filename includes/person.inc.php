@@ -5,6 +5,9 @@ class Person {
     private $eyeColor;
     private $age;
     
+    public static $drinkingAge = 21;
+
+
     public function __construct($name, $eyeColor, $age)
     {
         $this->name=$name;
