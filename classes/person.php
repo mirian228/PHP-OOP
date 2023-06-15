@@ -1,14 +1,14 @@
 <?php
 
 class Person {
-    private $name;
-    private $eyeColor;
-    private $age;
+    private string $name;
+    private string $eyeColor;
+    private int $age;
     
-    public static $drinkingAge = 21;
+    public static int $drinkingAge = 21;
 
 
-    public function __construct($name, $eyeColor, $age)
+    public function __construct(string $name,string $eyeColor, int $age)
     {
         $this->name=$name;
         $this->eyeColor=$eyeColor;
@@ -23,21 +23,21 @@ class Person {
 
     // Methods
 
-    public function setName($name) {
+    public function setName(string $name) {
         $this->name = $name;
     } 
 
     public function getName() {
         return $this->name;
     }
-    public function setEyeColor($eyeColor) {
+    public function setEyeColor(string $eyeColor) {
         $this->eyeColor = $eyeColor;
     } 
 
     public function getEyeColor() {
         return $this->eyeColor;
     }
-    public function setAge($age) {
+    public function setAge(string $age) {
         $this->age = $age;
     } 
 

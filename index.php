@@ -1,5 +1,6 @@
 <?php
-include("includes/person.inc.php");
+declare(strict_types = 1);
+include('./includes/autoloader.inc.php');
 ?>
 
 <!DOCTYPE html>
