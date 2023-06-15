@@ -15,10 +15,9 @@ include("includes/person.inc.php");
 
 
     <?php
-        $pet01 = new Person();
-        echo $pet01->first;
-    
-
+        $person = new Person("Miriani", "Brown", 22);
+        $person -> setName("Mirian");
+        echo "{$person->getName()}";
     ?>
     
 </body>
